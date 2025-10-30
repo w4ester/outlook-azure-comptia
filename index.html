@@ -4,56 +4,66 @@
 <meta charset="UTF-8">
 <title>Job Listings by Certification</title>
 <style>
-body { font-family: Arial, sans-serif; margin: 20px; }
-.toggle-container { margin-bottom: 20px; }
-button.toggle { padding: 10px 20px; margin-right: 10px; cursor: pointer; }
-.section { display: none; }
-.section.active { display: block; }
-ul { list-style-type: disc; margin-left: 20px; }
+  body { font-family: Arial, sans-serif; margin: 20px; }
+  .toggle-container { margin-bottom: 20px; }
+  button.toggle {
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  .section { display: none; }
+  .section.active { display: block; }
+  ul { list-style-type: disc; margin-left: 20px; }
 </style>
 <script>
 function showSection(id) {
-    document.getElementById('azure').classList.remove('active');
-    document.getElementById('comptia').classList.remove('active');
-    document.getElementById(id).classList.add('active');
+  // hide both sections
+  document.getElementById('azure').classList.remove('active');
+  document.getElementById('comptia').classList.remove('active');
+  // show the selected section
+  document.getElementById(id).classList.add('active');
 }
 window.onload = function() {
-    showSection('azure');
+  // default to showing Azure jobs
+  showSection('azure');
 };
 </script>
 </head>
 <body>
-<h1>Job Listings by Certification</h1>
+  <h1>Job Listings by Certification</h1>
 
-<div class="toggle-container">
+  <div class="toggle-container">
     <button class="toggle" onclick="showSection('azure')">Azure</button>
     <button class="toggle" onclick="showSection('comptia')">CompTIA</button>
-</div>
+  </div>
 
-<!-- Azure section -->
-<div id="azure" class="section">
+  <!-- Azure section -->
+  <div id="azure" class="section">
     <h2>Azure‑Certification Jobs</h2>
     <ul>
-        <li><a href="https://www.ziprecruiter.com/c/Cloudforce/Job/Cloud-Systems-Administrator/-in-National-Harbor,MD?jid=57b2a07e014c1864" target="_blank">Cloud Systems Administrator – Cloudforce (National Harbor, MD)</a> – <a href="cloud_systems_administrator_cloudforce.pdf" target="_blank">PDF Summary</a></li>
-        <li><a href="https://www.ziprecruiter.com/c/AHU-Technologies-Inc/Job/Senior-Data-Engineer-(Azure-Dynamics-365)/-in-Washington,DC?jid=1d52c7b560dd1263" target="_blank">Senior Data Engineer (Azure/Dynamics 365) – AHU Technologies Inc. (Washington, DC)</a> – <a href="senior_data_engineer_ahu_technologies.pdf" target="_blank">PDF Summary</a></li>
-        <li><a href="https://www.ziprecruiter.com/c/Leidos/Job/Junior-Patching-Support-Engineer-(Azure-AWS)/-in-Alexandria,VA?jid=d390021a183607ff" target="_blank">Junior Patching Support Engineer (Azure/AWS) – Leidos (Alexandria, VA)</a> – <a href="junior_patching_support_engineer_leidos.pdf" target="_blank">PDF Summary</a></li>
-        <li><a href="https://www.ziprecruiter.com/c/Business-Operational-Concepts,-LLC/Job/Exchange-Engineer/-in-Ellicott-City,MD?jid=7d0847f4b0363145" target="_blank">Exchange Engineer – Business Operational Concepts, LLC (Ellicott City, MD)</a> – <a href="exchange_engineer_boc_llc.pdf" target="_blank">PDF Summary</a></li>
-        <li><a href="https://www.ziprecruiter.com/c/Pwc/Job/Azure-Engineer-Manager/-in-Washington,DC?jid=7b0c0bb402f67309" target="_blank">Azure Engineer – Manager – PwC (Washington, DC)</a> – <a href="azure_engineer_manager_pwc.pdf" target="_blank">PDF Summary</a></li>
-        <li><a href="https://www.ziprecruiter.com/c/AINS-LLC-DBA-OPEXUS/Job/Associate-Compliance-Engineer/-in-Washington,DC?jid=942f50737f05bae1" target="_blank">Associate Compliance Engineer – AINS LLC (dba OPEXUS) (Washington, DC)</a> – <a href="associate_compliance_engineer_opexus.pdf" target="_blank">PDF Summary</a></li>
-        <li><a href="https://www.ziprecruiter.com/c/ASM-Research/Job/Tier-1.5-Service-Desk-Technician/-in-Springfield,VA?jid=46afa1528e0da32f" target="_blank">Tier 1.5 Service Desk Technician – ASM Research (Springfield, VA)</a> – <a href="tier15_service_desk_technician_asm_research.pdf" target="_blank">PDF Summary</a></li>
-        <li><a href="https://www.ziprecruiter.com/c/MetroStar/Job/Business-Analyst-(5837)/-in-Washington,DC?jid=ca0e2f344845b9e3" target="_blank">Business Analyst (5837) – MetroStar (Washington, DC)</a> – <a href="business_analyst_5837_metrostar.pdf" target="_blank">PDF Summary</a></li>
-        <li><a href="https://www.ziprecruiter.com/c/Applied-Information-Sciences/Job/SOC-Engineer-Tier-2/-in-Springfield,VA?jid=a3cf2dc99ed28f8d" target="_blank">SOC Engineer Tier 2 – Applied Information Sciences (Springfield, VA)</a> – <a href="soc_engineer_tier_2_ais.pdf" target="_blank">PDF Summary</a></li>
-        <li><a href="https://www.ziprecruiter.com/c/The-Aerospace-Corporation/Job/Cloud-Engineer/-in-Chantilly,VA?jid=162c206a7d1f9652" target="_blank">Cloud Engineer – The Aerospace Corporation (Chantilly, VA)</a> – <a href="cloud_engineer_aerospace.pdf" target="_blank">PDF Summary</a></li>
+      <li><a href="https://www.ziprecruiter.com/c/Cloudforce/Job/Cloud-Systems-Administrator/-in-National-Harbor,MD?jid=57b2a07e014c1864" target="_blank">Cloud Systems Administrator – Cloudforce (National Harbor, MD)</a> – <a href="cloud_systems_administrator_cloudforce.pdf" target="_blank">PDF Summary</a></li>
+      <li><a href="https://www.ziprecruiter.com/c/AHU-Technologies-Inc/Job/Senior-Data-Engineer-(Azure-Dynamics-365)/-in-Washington,DC?jid=1d52c7b560dd1263" target="_blank">Senior Data Engineer (Azure/Dynamics 365) – AHU Technologies Inc. (Washington, DC)</a> – <a href="senior_data_engineer_ahu_technologies.pdf" target="_blank">PDF Summary</a></li>
+      <li><a href="https://www.ziprecruiter.com/c/Leidos/Job/Junior-Patching-Support-Engineer-(Azure-AWS)/-in-Alexandria,VA?jid=d390021a183607ff" target="_blank">Junior Patching Support Engineer (Azure/AWS) – Leidos (Alexandria, VA)</a> – <a href="junior_patching_support_engineer_leidos.pdf" target="_blank">PDF Summary</a></li>
+      <li><a href="https://www.ziprecruiter.com/c/Business-Operational-Concepts,-LLC/Job/Exchange-Engineer/-in-Ellicott-City,MD?jid=7d0847f4b0363145" target="_blank">Exchange Engineer – Business Operational Concepts, LLC (Ellicott City, MD)</a> – <a href="exchange_engineer_boc_llc.pdf" target="_blank">PDF Summary</a></li>
+      <li><a href="https://www.ziprecruiter.com/c/Pwc/Job/Azure-Engineer-Manager/-in-Washington,DC?jid=7b0c0bb402f67309" target="_blank">Azure Engineer – Manager – PwC (Washington, DC)</a> – <a href="azure_engineer_manager_pwc.pdf" target="_blank">PDF Summary</a></li>
+      <li><a href="https://www.ziprecruiter.com/c/AINS-LLC-DBA-OPEXUS/Job/Associate-Compliance-Engineer/-in-Washington,DC?jid=942f50737f05bae1" target="_blank">Associate Compliance Engineer – AINS LLC (dba OPEXUS) (Washington, DC)</a> – <a href="associate_compliance_engineer_opexus.pdf" target="_blank">PDF Summary</a></li>
+      <li><a href="https://www.ziprecruiter.com/c/ASM-Research/Job/Tier-1.5-Service-Desk-Technician/-in-Springfield,VA?jid=46afa1528e0da32f" target="_blank">Tier 1.5 Service Desk Technician – ASM Research (Springfield, VA)</a> – <a href="tier15_service_desk_technician_asm_research.pdf" target="_blank">PDF Summary</a></li>
+      <li><a href="https://www.ziprecruiter.com/c/MetroStar/Job/Business-Analyst-(5837)/-in-Washington,DC?jid=ca0e2f344845b9e3" target="_blank">Business Analyst (5837) – MetroStar (Washington, DC)</a> – <a href="business_analyst_5837_metrostar.pdf" target="_blank">PDF Summary</a></li>
+      <li><a href="https://www.ziprecruiter.com/c/Applied-Information-Sciences/Job/SOC-Engineer-Tier-2/-in-Springfield,VA?jid=a3cf2dc99ed28f8d" target="_blank">SOC Engineer Tier 2 – Applied Information Sciences (Springfield, VA)</a> – <a href="soc_engineer_tier_2_ais.pdf" target="_blank">PDF Summary</a></li>
+      <li><a href="https://www.ziprecruiter.com/c/The-Aerospace-Corporation/Job/Cloud-Engineer/-in-Chantilly,VA?jid=162c206a7d1f9652" target="_blank">Cloud Engineer – The Aerospace Corporation (Chantilly, VA)</a> – <a href="cloud_engineer_aerospace.pdf" target="_blank">PDF Summary</a></li>
     </ul>
-</div>
+  </div>
 
-<!-- CompTIA section -->
-<div id="comptia" class="section">
+  <!-- CompTIA section -->
+  <div id="comptia" class="section">
     <h2>CompTIA‑Certification Jobs</h2>
     <ul>
-        <li><a href="https://www.ziprecruiter.com/c/Leidos/Job/Junior-Patching-Support-Engineer-(Azure-AWS)/-in-Alexandria,VA?jid=d390021a183607ff" target="_blank">Junior Patching Support Engineer (Azure/AWS) – Leidos (Alexandria, VA)</a> – <a href="junior_patching_support_engineer_leidos.pdf" target="_blank">PDF Summary</a></li>
-        <li><a href="https://www.ziprecruiter.com/c/ASM-Research/Job/Tier-1.5-Service-Desk-Technician/-in-Springfield,VA?jid=46afa1528e0da32f" target="_blank">Tier 1.5 Service Desk Technician – ASM Research (Springfield, VA)</a> – <a href="tier15_service_desk_technician_asm_research.pdf" target="_blank">PDF Summary</a></li>
+      <li><a href="https://www.ziprecruiter.com/c/Gunnison-Consulting-Group/Job/Information-Assurance-Analyst/-in-Arlington,VA" target="_blank">Information Assurance Analyst – Gunnison Consulting Group (Arlington, VA)</a> – <a href="information_assurance_analyst_gunnison.pdf" target="_blank">PDF Summary</a></li>
+      <li><a href="https://www.ziprecruiter.com/c/NVT-Staffing/Job/Service-Desk-Analyst/-in-Arlington,VA" target="_blank">Service Desk Analyst – NVT Staffing (Arlington, VA)</a> – <a href="service_desk_analyst_nvt.pdf" target="_blank">PDF Summary</a></li>
+      <li><a href="https://www.ziprecruiter.com/c/RCG-Inc/Job/Tier-I-Helpdesk-Analyst/-in-Arlington,VA" target="_blank">Tier I Helpdesk Analyst – RCG Inc. (Arlington, VA)</a> – <a href="tier_i_helpdesk_analyst_rcg.pdf" target="_blank">PDF Summary</a></li>
+      <li><a href="https://www.ziprecruiter.com/c/Leidos/Job/Junior-Patching-Support-Engineer-(Azure-AWS)/-in-Alexandria,VA?jid=d390021a183607ff" target="_blank">Junior Patching Support Engineer (Azure/AWS) – Leidos (Alexandria, VA)</a> – <a href="junior_patching_support_engineer_leidos.pdf" target="_blank">PDF Summary</a></li>
+      <li><a href="https://www.ziprecruiter.com/c/ASM-Research/Job/Tier-1.5-Service-Desk-Technician/-in-Springfield,VA?jid=46afa1528e0da32f" target="_blank">Tier 1.5 Service Desk Technician – ASM Research (Springfield, VA)</a> – <a href="tier15_service_desk_technician_asm_research.pdf" target="_blank">PDF Summary</a></li>
     </ul>
-</div>
+  </div>
 </body>
 </html>
