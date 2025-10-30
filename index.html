@@ -17,14 +17,11 @@
 </style>
 <script>
 function showSection(id) {
-  // hide both sections
   document.getElementById('azure').classList.remove('active');
   document.getElementById('comptia').classList.remove('active');
-  // show the selected section
   document.getElementById(id).classList.add('active');
 }
 window.onload = function() {
-  // default to showing Azure jobs
   showSection('azure');
 };
 </script>
@@ -58,12 +55,10 @@ window.onload = function() {
   <div id="comptia" class="section">
     <h2>CompTIA‑Certification Jobs</h2>
     <ul>
-      <li><a href="https://www.ziprecruiter.com/c/Gunnison-Consulting-Group/Job/Information-Assurance-Analyst/-in-Arlington,VA" target="_blank">Information Assurance Analyst – Gunnison Consulting Group (Arlington, VA)</a> – <a href="information_assurance_analyst_gunnison.pdf" target="_blank">PDF Summary</a></li>
-      <li><a href="https://www.ziprecruiter.com/c/NVT-Staffing/Job/Service-Desk-Analyst/-in-Arlington,VA" target="_blank">Service Desk Analyst – NVT Staffing (Arlington, VA)</a> – <a href="service_desk_analyst_nvt.pdf" target="_blank">PDF Summary</a></li>
-      <li><a href="https://www.ziprecruiter.com/c/RCG-Inc/Job/Tier-I-Helpdesk-Analyst/-in-Arlington,VA" target="_blank">Tier I Helpdesk Analyst – RCG Inc. (Arlington, VA)</a> – <a href="tier_i_helpdesk_analyst_rcg.pdf" target="_blank">PDF Summary</a></li>
       <li><a href="https://www.ziprecruiter.com/c/Leidos/Job/Junior-Patching-Support-Engineer-(Azure-AWS)/-in-Alexandria,VA?jid=d390021a183607ff" target="_blank">Junior Patching Support Engineer (Azure/AWS) – Leidos (Alexandria, VA)</a> – <a href="junior_patching_support_engineer_leidos.pdf" target="_blank">PDF Summary</a></li>
       <li><a href="https://www.ziprecruiter.com/c/ASM-Research/Job/Tier-1.5-Service-Desk-Technician/-in-Springfield,VA?jid=46afa1528e0da32f" target="_blank">Tier 1.5 Service Desk Technician – ASM Research (Springfield, VA)</a> – <a href="tier15_service_desk_technician_asm_research.pdf" target="_blank">PDF Summary</a></li>
     </ul>
+    <p><em>These two roles still open successfully and list CompTIA Security+ (or equivalent) as part of the certification requirements.</em></p>
   </div>
 </body>
 </html>
