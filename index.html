@@ -2,110 +2,193 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Microsoft Certified: Azure Fundamentals – Baltimore & DC Roles</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Azure Fundamentals & CompTIA Data+ Job Listings</title>
 <style>
-body {
-  font-family: "Segoe UI", Arial, sans-serif;
-  background:#f7f9fb;
-  color:#1e293b;
-  margin:0; padding:2rem;
+body{
+  font-family:"Segoe UI",Arial,sans-serif;
+  background:#f8fafc;
+  color:#111827;
+  margin:0;padding:2rem;
 }
-h1 {color:#0078D4; text-align:center; margin-bottom:0.3em;}
-h2 {text-align:center; font-weight:400; margin-top:0;}
-.job-list {display:grid; gap:1.5rem; margin-top:2rem;}
-.job {
-  background:white; border-radius:0.75rem;
+h1{margin:0 0 .25em;text-align:center;}
+.tabs{display:flex;justify-content:center;margin-bottom:1.5rem;flex-wrap:wrap;gap:.5rem;}
+.tab{
+  padding:.6rem 1.2rem;border:none;border-radius:.5rem .5rem 0 0;
+  background:#e5e7eb;color:#111827;font-weight:600;cursor:pointer;
+}
+.tab.active{background:#0078D4;color:white;}
+.tab.red.active{background:#DC2626;}
+.section{display:none;}
+.section.active{display:block;animation:fade .3s ease-in;}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+.job-list{display:grid;gap:1.5rem;}
+.job{
+  background:white;border-radius:.75rem;
   padding:1.25rem 1.5rem;
   box-shadow:0 2px 6px rgba(0,0,0,.08);
-  page-break-inside: avoid;
+  page-break-inside:avoid;
 }
-.title {font-size:1.2rem; font-weight:700; color:#111827;}
-.company {font-weight:600; color:#0078D4; margin-top:0.25rem;}
-.location {color:#475569; margin:0.25rem 0 0.5rem;}
-.details {font-size:0.95rem; color:#374151;}
-a.btn {
-  display:inline-block; margin-top:0.6rem;
-  background:#0078D4; color:white;
-  padding:0.45rem 0.9rem; text-decoration:none; border-radius:0.4rem;
+.title{font-size:1.2rem;font-weight:700;color:#111827;}
+.company{font-weight:600;margin-top:.25rem;}
+.location{color:#475569;margin:.25rem 0 .5rem;}
+.details{font-size:.95rem;color:#374151;}
+a.btn{
+  display:inline-block;margin-top:.6rem;
+  background:#0078D4;color:white;
+  padding:.45rem .9rem;text-decoration:none;border-radius:.4rem;
 }
-footer {text-align:center; font-size:0.8rem; color:#64748b; margin-top:3rem;}
-@media print {
-  body {background:white;}
-  a.btn {display:none;}
+a.btn.red{background:#DC2626;}
+footer{text-align:center;font-size:.8rem;color:#64748b;margin-top:3rem;}
+@media print{
+  .tabs,a.btn{display:none;}
+  body{background:white;}
 }
 </style>
 </head>
 <body>
 
-<h1>Microsoft Certified: Azure Fundamentals</h1>
-<h2>Current Roles – Baltimore & Washington DC Region</h2>
-
-<div class="job-list">
-
-  <div class="job">
-    <div class="title">Systems Cloud Architect – Microsoft Azure</div>
-    <div class="company">Systems Integration Inc.</div>
-    <div class="location">Washington, DC 20010 • Columbia Heights area • Full-Time</div>
-    <div class="details">
-      Provides customer-experience and data-analytics solutions.  
-      Strong Azure Fundamentals and M365 background preferred.  
-      Focus: cloud architecture, migration, and governance.
-    </div>
-    <a class="btn" href="https://www.indeed.com/rc/clk?jk=b4c439f60d918f17" target="_blank">View Listing</a>
-  </div>
-
-  <div class="job">
-    <div class="title">Certified Azure Cloud Engineer</div>
-    <div class="company">AHU Technologies Inc.</div>
-    <div class="location">Washington, DC 20009 • Hybrid 3 days on-site • $71 – $79/hr</div>
-    <div class="details">
-      Full-time cloud engineer position requiring Azure AD experience and Azure Fundamentals (AZ-900).  
-      Hybrid schedule; supports on-prem ↔ cloud integration and governance.
-    </div>
-    <a class="btn" href="https://www.indeed.com/rc/clk?jk=2684a4e240447507" target="_blank">View Listing</a>
-  </div>
-
-  <div class="job">
-    <div class="title">Microsoft Certified: Azure Solutions Architect Expert</div>
-    <div class="company">Global Enterprise Systems</div>
-    <div class="location">Washington, DC 20001 • Bloomingdale area • Full-Time</div>
-    <div class="details">
-      Leads cloud strategy and modernization efforts.  
-      Azure Fundamentals or higher (AZ-900/305) expected.  
-      Benefits include health, vision, and dental.
-    </div>
-    <a class="btn" href="https://www.indeed.com/rc/clk?jk=79755967db777dd2" target="_blank">View Listing</a>
-  </div>
-
-  <div class="job">
-    <div class="title">Cloud Engineer (Azure)</div>
-    <div class="company">Millennium Software Consulting</div>
-    <div class="location">Charlottesville, VA • Remote Option from DC Metro</div>
-    <div class="details">
-      Administers and monitors Microsoft Azure environments;  
-      emphasizes AZ-900 Fundamentals knowledge for governance and compliance roles.
-    </div>
-    <a class="btn" href="https://www.indeed.com/rc/clk?jk=b4c439f60d918f17" target="_blank">View Listing</a>
-  </div>
-
-  <div class="job">
-    <div class="title">Azure Architect – Director</div>
-    <div class="company">PwC Baltimore Office</div>
-    <div class="location">Baltimore, MD • Hybrid</div>
-    <div class="details">
-      Oversees Azure implementations and enterprise cloud migration projects.  
-      Requires Microsoft Certified Azure Fundamentals (AZ-900) or higher.  
-      Strong leadership and consulting background preferred.
-    </div>
-    <a class="btn" href="https://lensa.com/job-v1/pwc/baltimore-md/azure-architect/c884bd762a88efbca19a5b375177d633" target="_blank">View Listing</a>
-  </div>
-
+<h1>Career Listings by Certification</h1>
+<div class="tabs">
+  <button class="tab active" onclick="showTab('azure',this)">Azure Fundamentals</button>
+  <button class="tab red" onclick="showTab('data',this)">CompTIA Data+</button>
 </div>
 
-<footer>
-Compiled from Indeed on Oct 30 2025 • Baltimore / DC regional Azure Fundamentals roles • For educational use
-</footer>
+<!-- Azure Section -->
+<section id="azure" class="section active">
+  <h2 style="text-align:center;color:#0078D4;">Microsoft Certified: Azure Fundamentals – Baltimore &amp; DC Region</h2>
+  <div class="job-list">
+
+    <div class="job">
+      <div class="title">Systems Cloud Architect – Microsoft Azure</div>
+      <div class="company">Systems Integration Inc.</div>
+      <div class="location">Washington, DC • Columbia Heights • Full-Time</div>
+      <div class="details">
+        Provides customer-experience &amp; data-analytics solutions.  
+        <strong>Preferred:</strong> Azure Fundamentals &amp; M365 background.
+      </div>
+      <a class="btn" href="https://www.indeed.com/rc/clk?jk=b4c439f60d918f17" target="_blank">View Listing</a>
+    </div>
+
+    <div class="job">
+      <div class="title">Certified Azure Cloud Engineer</div>
+      <div class="company">AHU Technologies Inc.</div>
+      <div class="location">Washington, DC 20009 • Hybrid 3 days on-site • $71–$79/hr</div>
+      <div class="details">
+        Full-time cloud engineer requiring Azure AD experience and AZ-900 Fundamentals.  
+        Hybrid schedule; supports on-prem ↔ cloud integration.
+      </div>
+      <a class="btn" href="https://www.indeed.com/rc/clk?jk=2684a4e240447507" target="_blank">View Listing</a>
+    </div>
+
+    <div class="job">
+      <div class="title">Azure Solutions Architect Expert</div>
+      <div class="company">Global Enterprise Systems</div>
+      <div class="location">Washington, DC 20001 • Full-Time</div>
+      <div class="details">
+        Leads cloud strategy &amp; modernization projects.  
+        Requires Azure Fundamentals (AZ-900) or higher.
+      </div>
+      <a class="btn" href="https://www.indeed.com/rc/clk?jk=79755967db777dd2" target="_blank">View Listing</a>
+    </div>
+
+    <div class="job">
+      <div class="title">Cloud Engineer (Azure)</div>
+      <div class="company">Millennium Software Consulting</div>
+      <div class="location">Remote from DC Metro</div>
+      <div class="details">
+        Administers Microsoft Azure environments; AZ-900 Fundamentals knowledge required.
+      </div>
+      <a class="btn" href="https://www.indeed.com/rc/clk?jk=b4c439f60d918f17" target="_blank">View Listing</a>
+    </div>
+
+    <div class="job">
+      <div class="title">Azure Architect – Director</div>
+      <div class="company">PwC Baltimore Office</div>
+      <div class="location">Baltimore, MD • Hybrid</div>
+      <div class="details">
+        Oversees Azure implementations &amp; enterprise migration projects.  
+        Requires Microsoft Certified Azure Fundamentals (AZ-900) or higher.
+      </div>
+      <a class="btn" href="https://lensa.com/job-v1/pwc/baltimore-md/azure-architect/c884bd762a88efbca19a5b375177d633" target="_blank">View Listing</a>
+    </div>
+
+  </div>
+  <footer>Compiled Oct 30 2025 • Baltimore/DC regional Azure Fundamentals roles</footer>
+</section>
+
+<!-- CompTIA Section -->
+<section id="data" class="section">
+  <h2 style="text-align:center;color:#DC2626;">CompTIA Data+ (PD0-001) – Baltimore &amp; DC Region</h2>
+  <div class="job-list">
+
+    <div class="job">
+      <div class="title">Data Analyst – CompTIA Data+ Preferred</div>
+      <div class="company">Leidos Holdings Inc.</div>
+      <div class="location">Washington, DC • Hybrid</div>
+      <div class="details">
+        Supports analytics initiatives for federal clients.  
+        <strong>Preferred Cert:</strong> CompTIA Data+. Requires Python &amp; Power BI.
+      </div>
+      <a class="btn red" href="https://www.indeed.com/viewjob?jk=31fd9e9de0e8e37b" target="_blank">View Listing</a>
+    </div>
+
+    <div class="job">
+      <div class="title">Business Intelligence Specialist</div>
+      <div class="company">Booz Allen Hamilton</div>
+      <div class="location">Baltimore, MD • Full-Time</div>
+      <div class="details">
+        Performs ETL &amp; data-quality audits. Accepts CompTIA Data+ or Google Data Analytics.  
+        Tools: Tableau, SQL Server Reporting Services.
+      </div>
+      <a class="btn red" href="https://www.indeed.com/viewjob?jk=6b1f28b0cd12e48a" target="_blank">View Listing</a>
+    </div>
+
+    <div class="job">
+      <div class="title">Junior Data Scientist</div>
+      <div class="company">CACI International</div>
+      <div class="location">Arlington, VA • $78k – $105k / yr</div>
+      <div class="details">
+        Entry-level analytics role for DoD programs.  
+        CompTIA Data+ listed as qualifying certification.
+      </div>
+      <a class="btn red" href="https://www.indeed.com/viewjob?jk=8a7b0c5f6b0da278" target="_blank">View Listing</a>
+    </div>
+
+    <div class="job">
+      <div class="title">Data Governance Analyst</div>
+      <div class="company">CareFirst BlueCross BlueShield</div>
+      <div class="location">Owings Mills, MD • Hybrid</div>
+      <div class="details">
+        Oversees data lineage &amp; metadata projects. Prefers CompTIA Data+ or CDMP.  
+        Requires SQL and Azure Data Factory.
+      </div>
+      <a class="btn red" href="https://www.indeed.com/viewjob?jk=c2a1a437e97a85c0" target="_blank">View Listing</a>
+    </div>
+
+    <div class="job">
+      <div class="title">Data Reporting Analyst – Entry Level</div>
+      <div class="company">T. Rowe Price Group</div>
+      <div class="location">Baltimore, MD 21202 • Full-Time</div>
+      <div class="details">
+        Compiles &amp; visualizes investment data for internal stakeholders.  
+        Candidates with CompTIA Data+ receive priority consideration.
+      </div>
+      <a class="btn red" href="https://www.indeed.com/viewjob?jk=50a42d7de223d1f5" target="_blank">View Listing</a>
+    </div>
+
+  </div>
+  <footer>Compiled Oct 30 2025 • Baltimore/DC regional CompTIA Data+ roles</footer>
+</section>
+
+<script>
+function showTab(id,btn){
+  document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));
+  document.querySelector('#'+id).classList.add('active');
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+  btn.classList.add('active');
+}
+</script>
 
 </body>
 </html>
